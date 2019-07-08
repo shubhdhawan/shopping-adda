@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>login page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="828439187981-omsphs91i58n96hvvqqgr6unnm09o0gi.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+      }; 
+    </script>
+  
+  
+  <style>
+  body{ background-image:url("background.jpg");width:100%;height:100vh;
+      background-repeat:no-repeat;
+      	 color:#fff; }
+ 	  
+	  
+.formcontainer{border:0px solid #fff; padding:50px 60px; margin-top:20vh;
+               -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+               -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+               box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+			   }	  
+	  
+.font{ font-family: "playball",playball;
+     font-size:5vw;}	  
+	  
+	  
+	  
+	  
+	  </style>
+</head>
+<body> 
+ <h1 class="font">Shopping Adda</h1>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12"></div>
+  <div class="col-md-4 col-sm-4 col-xs-12">
+    <form class="formcontainer" method="post" action="loginphp.php">
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" name="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" name="pass">
+  </div>
+ <a href="forgetpassword.html " style="color:red";>forget Password?</a>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="Login" class="btn btn-success btn-block">Login</button>
+<center>--Or--
+  <div class="register">
+  <a href="signup.html">Register</a></div>
+  --Or--
+<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div></center>
+</form>
+
+</div>
+   </div>
+  </div>
+
+ 
+</body>
+</html>

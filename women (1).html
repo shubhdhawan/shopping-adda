@@ -1,0 +1,700 @@
+<html>
+<head>
+  <title>Shopping Adda</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<STYLE>
+.font{ font-family: "playball",playball;
+     font-size:5vw;}  
+   
+ .panel-body{ color:black;}  
+   
+.navbar-brand { position: relative; z-index: 2; }
+
+.navbar-nav.navbar-right .btn { position: relative; z-index: 2; padding: 4px 20px; margin: 10px auto; transition: transform 0.3s; }
+
+.navbar .navbar-collapse { position: relative; overflow: hidden !important; }
+.navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 22px; }
+
+.navbar .nav-collapse { position: absolute; z-index: 1; top: 0; left: 0; right: 0; bottom: 0; margin: 0; padding-right: 120px; padding-left: 80px; width: 100%; }
+.navbar.navbar-default .nav-collapse { background-color: #f8f8f8; }
+.navbar.navbar-inverse .nav-collapse { background-color: #222; }
+.navbar .nav-collapse .navbar-form { border-width: 0; box-shadow: none; }
+.nav-collapse>li { float: right; }
+
+.btn.btn-circle { border-radius: 50px; }
+.btn.btn-outline { background-color: transparent; }
+
+.navbar-nav.navbar-right .btn:not(.collapsed) {
+    background-color: rgb(111, 84, 153);
+    border-color: rgb(111, 84, 153);
+    color: rgb(255, 255, 255);
+}
+
+.navbar.navbar-default .nav-collapse,
+.navbar.navbar-inverse .nav-collapse {
+    height: auto !important;
+    transition: transform 0.3s;
+    transform: translate(0px,-50px);
+}
+.navbar.navbar-default .nav-collapse.in,
+.navbar.navbar-inverse .nav-collapse.in {
+    transform: translate(0px,0px);
+}
+
+
+@media screen and (max-width: 767px) {
+    .navbar .navbar-collapse .navbar-right > li:last-child { padding-left: 15px; padding-right: 15px; } 
+    
+    .navbar .nav-collapse { margin: 7.5px auto; padding: 0; }
+    .navbar .nav-collapse .navbar-form { margin: 0; }
+    .nav-collapse>li { float: none; }
+    
+    .navbar.navbar-default .nav-collapse,
+    .navbar.navbar-inverse .nav-collapse {
+        transform: translate(-100%,0px);
+    }
+    .navbar.navbar-default .nav-collapse.in,
+    .navbar.navbar-inverse .nav-collapse.in {
+        transform: translate(0px,0px);
+    }
+    
+    .navbar.navbar-default .nav-collapse.slide-down,
+    .navbar.navbar-inverse .nav-collapse.slide-down {
+        transform: translate(0px,-100%);
+    }
+    .navbar.navbar-default .nav-collapse.in.slide-down,
+    .navbar.navbar-inverse .nav-collapse.in.slide-down {
+        transform: translate(0px,0px);
+    }
+}  
+   
+   
+   </style>
+ </head>
+<body style="background-color:#000033; color:#fff;" >
+ <h1 class="font"><a href="index.php" style="color:white;text-decoration: none">Shopping Adda</a></h1>
+ 
+  
+    <!-- Second navbar for categories -->
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">HOME</a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="women2.html">Winter Collection</a></li>
+            <li><a href="women2.html">Summer Collection</a></li>
+            <li><a href="women2.html">Trending</a></li>
+            <li><a href="women2.html">Most viewed</a></li>
+            <li><a href="women2.html">Bestsellers</a></li>
+            <li><a href="women2.html">Celeberity Look</a></li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse1" aria-expanded="false" aria-controls="nav-collapse1">Categories</a>
+            </li>
+          </ul>
+          <ul class="collapse nav navbar-nav nav-collapse" id="nav-collapse1">
+            <li><a href="women2.html">T-shirts</a></li>
+            <li><a href="women2.html">Shirts</a></li>
+            <li><a href="women2.html">Casuals</a></li>
+            <li><a href="women2.html">Trousers</a></li>
+            <li><a href="women2.html">Suits</a></li>
+            <li><a href="women2.html">Ethnic</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+  
+  
+  <div class="container-fluid">
+   <div class="row">
+     <div class="row">
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/11525683977921-Navy-Blue--Green-Embroidered-yoke-cape-design-Maxi-2971525683977801-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/11525683977904-Navy-Blue--Green-Embroidered-yoke-cape-design-Maxi-2971525683977801-2.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/11525683977921-Navy-Blue--Green-Embroidered-yoke-cape-design-Maxi-2971525683977801-1 (1).jpg" alt="New York">
+    </div>
+  
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="AKS
+Women Blue & Green  Dress">AKS<br>
+Women Blue & Green  Dress
+Rs. 1249
+<input type="hidden" name="price" value="1249">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                      <option value="m">M</option>
+                                      <option value="l">L</option>
+                                    </select><br>
+  </div>                 <button class="btn btn-danger" value="submit">BUY</button></div></form>
+  </div>
+   </div>
+    
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+      <div id="myCarousel1" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/11525850112845-Athena-Women-Navy-Blue-Self-Design-Sheath-Dress-621525850112586-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/11525850112883-Athena-Women-Navy-Blue-Self-Design-Sheath-Dress-621525850112586-4.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/11525850112768-Athena-Women-Navy-Blue-Self-Design-Sheath-Dress-621525850112586-3.jpg" alt="New York">
+    </div>
+  
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel1" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel1" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Athena
+Women Navy  Dress">Athena<br>
+Women Navy  Dress Rs. 1262
+<input type="hidden" name="price" value="1262">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+               Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+    </div>                  
+  <button class="btn btn-danger" value="submit">BUY</button></div></form>
+  </div>
+   </div>  
+    
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel2" class="carousel slide">
+  
+ 
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/a12d2235-8ac9-42ed-8ed7-6b0959a4cb761541487143046-SASSAFRAS-Women-Pink-Fit--Flare-Off-Shoulder-Midi-Dress-7461541487142977-4.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/a322227c-be78-4af4-8850-95462b7ae0b51541487143086-SASSAFRAS-Women-Pink-Fit--Flare-Off-Shoulder-Midi-Dress-7461541487142977-1.jpg" alt="Chicago">
+    </div>
+ 
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="SASSAFRAS
+Women POff-Shoulder Dress"> SASSAFRAS<br>
+Women POff-Shoulder Dress 
+Rs. 899
+<input type="hidden" name="price" value="899">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>    
+   
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel3" class="carousel slide">
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/5402d115-c4bc-4f0a-97a8-8a938daeb51f1542608617855-Libas-Women-Dresses-8671542608617653-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/8a026d77-fad5-4a06-859c-0288c4e286691542608617785-Libas-Women-Dresses-8671542608617653-4.jpg" alt="Chicago">
+    </div>
+ 
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Libas
+Women Black  Dress"> Libas<br>
+Women Black  Dress
+Rs. 849
+<input type="hidden" name="price" value="849">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>    
+ 
+    <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel5" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/3b1f5f04-1345-4b52-b687-ee7c03d7173e1525950604988-Style-Quotient-Women-Blue-Striped-Top-1261525950604835-2.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/ee8be048-d875-45ef-bad5-21a0c1de32621525950604940-Style-Quotient-Women-Blue-Striped-Top-1261525950604835-4.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/708c89dd-1f57-491d-a1ad-cfec17e20d731525950605013-Style-Quotient-Women-Blue-Striped-Top-1261525950604835-1.jpg" alt="New York">
+    </div>
+ 
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel5" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel5" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Vishudh
+Women Mauve Dress"> Vishudh<br>
+Women Mauve  Dress
+Rs. 1271
+<input type="hidden" name="price" value="1271">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>      
+    
+    
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel6" class="carousel slide" >
+  
+
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/11522662991296-Style-Quotient-Women-Tops-4231522662991112-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/11522662991260-Style-Quotient-Women-Tops-4231522662991112-3.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/11522662991296-Style-Quotient-Women-Tops-4231522662991112-1 (1).jpg" alt="New York">
+    </div>
+  
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel6" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel6" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Style Quotient
+Women Black Polka Top"> Style Quotient<br>
+Women Black Polka  Top
+Rs. 559
+<input type="hidden" name="price" value="559">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>        
+    
+    
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel7" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/11523964837669-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-3.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/11523964837693-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-2.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/11523964837725-AMIYRA-Maroon-Solid-Ruffles-Skirt-8371523964837512-1.jpg" alt="New York">
+    </div>
+
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel7" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel7" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Berrylush
+Maroon Skirt with Trousers"> Berrylush<br>
+Maroon  Skirt with Trousers
+Rs. 987
+<input type="hidden" name="price" value="987">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>          
+   
+   
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel8" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/62cd7a15-020e-4470-9603-1f81337cd07b1540794994465-SASSAFRAS-Women-Skirts-9051540794994365-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/de94b7c9-e5cd-436a-9b8b-933c3d99d4e21540794994421-SASSAFRAS-Women-Skirts-9051540794994365-4.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/08266acf-4966-41a7-86d3-234eaee3948e1540794994436-SASSAFRAS-Women-Skirts-9051540794994365-3.jpg" alt="New York">
+    </div>
+  
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel8" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel8" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="SASSAFRAS
+Women Dusty Pink  Skirt"> SASSAFRAS<br>
+Women Dusty Pink  Skirt
+Rs. 1099
+<input type="hidden" name="price" value="1099">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>          
+   
+   
+    <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel9" class="carousel slide" >
+  
+  
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/Belle-Fille-Navy-Hooded-Sweatshirt_50ce395d8b4d7f1eafc65214383977c9_images.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/Belle-Fille-Navy-Hooded-Sweatshirt_173a26aaf59495341edb96b3acf72cae_images.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/Belle-Fille-Navy-Hooded-Sweatshirt_1329bb8bb734a1db5aa646975eadaf0f_images.jpg" alt="New York">
+    </div>
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel9" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel9" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Belle Fille
+Women Navy Hooded Sweatshirt"> Belle Fille<br>
+Women Navy Hooded Sweatshirt
+Rs. 638
+<input type="hidden" name="price" value="638">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>          
+   
+   
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel10" class="carousel slide" >
+  
+ 
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/11512452171217-SASSAFRAS-Women-Red-Printed-Hooded-Sweatshirt-4821512452171083-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/11512452171189-SASSAFRAS-Women-Red-Printed-Hooded-Sweatshirt-4821512452171083-2.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/11512452171127-SASSAFRAS-Women-Red-Printed-Hooded-Sweatshirt-4821512452171083-5.jpg" alt="New York">
+    </div>
+  
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel10" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel10" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="SASSAFRAS
+Women Red  Crop Sweatshirt"> SASSAFRAS<br>
+Women Red  Crop Sweatshirt
+Rs. 899
+<input type="hidden" name="price" value="899">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>          
+     
+    <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><div id="myCarousel4" class="carousel slide" >
+  
+ 
+
+  
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/f6981ae2-0d60-4ffd-a58b-ca96c367be241543921311534-1.jpg" alt="Los Angeles">
+    </div>
+     
+    <div class="item">
+      <img src="images/43e0d0f0-04f3-4b71-bb97-35f5ba27b5231543921311641-4.jpg" alt="Chicago">
+    </div>
+  
+    
+
+    <div class="item">
+      <img src="images/d138b633-1254-40d1-8bf0-d489f7fe0e5d1543921311574-2.jpg" alt="New York">
+    </div>
+  
+  </div>
+
+  
+  <a class="left carousel-control" href="#myCarousel4" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel4" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="Berrylush Stripped long Kurti">Berrylush<br>Stripped long Kurti Rs. 1299 
+      <input type="hidden" name="price" value="1299">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>    
+    
+   
+   <div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="panel panel-default">
+    <div class="panel-heading"><img src="images/927980cd-3b0b-4768-a9ee-4069e5b4c36f1540811319333-HRX-by-Hrithik-Roshan-Women-Jackets-1981540811318162-1.jpg" class="img-responsive"></div><form method="POST" action="order.php">
+    <div class="panel-body"><input type="hidden" name="product" value="HRx Womens Zipper"> HRx<br>Womens Zipper Rs. 1199
+      <input type="hidden" name="price" value="1199">
+    <div class="form-group">  Quantity: <select name="quant"><option value="1">1</option>
+                                     <option value="2">2</option>
+                                     <option value="3">3</option></select>
+                    Size: <select name="size"><option value="s">S</option>
+                                            <option value="m">M</option>
+                                            <option value="l">L</option>
+                                    </select>
+  </div>                 <button class="btn btn-danger">BUY</button></div></form>
+  </div>
+   </div>          
+          <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="" aria-expanded="false" style="color:white; margin-left:70vh; margin-bottom:20px"; >More Products</a> 
+   </body>
+   </html>

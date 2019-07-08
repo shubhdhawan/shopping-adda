@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign in</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+
+  function checkForm(form)
+  {
+  	 
+    // validation fails if the input is blank
+    if(form.name1.value == "" || form.phone.value == "" || form.email.value == "" || form.pass.value == "" || form.repass.value == "") {
+      alert("Error: Some Feilds are empty!");
+      form.name1.focus();
+      return false;
+    }
+ 		var re = /^[\w ]+$/;
+
+    // validation fails if the input doesn't match our regular expression
+    else if(!re.test(form.name1.value)) {
+      alert("Error: Input contains invalid characters!");
+      form.name1.focus();
+      return false;
+    }
+	else if(form.repass.value != form.pass.value)
+    {
+    	alert("Error: Password does not match!!");
+    	form.pass.focus();
+    	return false;
+    }
+  
+else{
+    // validation was successful
+    return true;
+}
+  }
+
+</script>
+  
+  
+  <style>
+  body{ background-image:url("background.jpg");width:100%;height:100%;
+      background-repeat:no-repeat;
+      	 color:white; }
+ 	  
+	  
+.formcontainer{border:0px solid #fff; padding:50px 60px; margin-top:1vh;
+               -webkit-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+               -moz-box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+               box-shadow: -1px 4px 26px 11px rgba(0,0,0,0.75);
+			   }	  
+	  
+.font{ font-family: "playball",playball;
+     font-size:3vw;}	  
+	  
+	  </style>
+</head>
+<body> 
+	<h1 class="font">Shopping Adda</h1>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-12">
+			</div>
+			<div class="col-md-4 col-sm-4 col-xs-12">
+				<form class="formcontainer" method="post" action="register.php" onsubmit="return checkForm(this)">
+					<div class="form-group">
+						<label for="Name">Name:</label>
+						<input type="text" class="form-control" id="Name" name="name">
+						<span class="error">* <?php echo $nameErr;?></span>
+  						<br><br>
+  					</div>
+					<div class="form-group">
+						<label for="No.">Phone No.</label>
+						<input type="number" class="form-control" id="phone" name="phone">
+					</div>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" id="email" name="email">
+						<span class="error">* <?php echo $emailErr;?></span>
+  						<br><br>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input type="password" class="form-control" id="pass" name="pass">
+					</div>
+					<div class="form-group">
+						<label for="repwd">Confirm-Password:</label>
+						<input type="password" class="form-control" id="repass" name="repass">
+					</div>
+					
+					<button type="Login" class="btn btn-success btn-block" >Sign up</button>
+				</form>
+			</div>
+		</div>
+	</div>
+ 	
+</body>
+</html>
